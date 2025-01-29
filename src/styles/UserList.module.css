@@ -1,0 +1,140 @@
+.userListContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 500px;
+}
+
+.userListTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.userTable th,
+.userTable td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.userTable th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.userTable tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.userTable tr:hover {
+  background: #f1f1f1;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.editButton {
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+}
+
+.editButton:hover {
+  background: #218838;
+}
+
+.deleteButton {
+  background: #dc3545;
+  color: white;
+}
+
+.deleteButton:hover {
+  background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .userTable th,
+  .userTable td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pageButton {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.pageButton:hover {
+  background-color: #0056b3;
+}
+
+.pageButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageButton.active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.addUserButton {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.addUserButton:hover {
+  background-color: #0056b3;
+}
